@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Japanese Speaking Practice</title>
+
+    <link rel="stylesheet" href="gen.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            🇯🇵 Japanese Practice
+        </div>
+
+        <!-- Opens history in a completely new browser tab -->
+        <a href="gen.html"
+           class="history-link"
+           target="_blank"
+           rel="noopener noreferrer">
+            📚 History
+        </a>
+    </header>
+
+    <main class="container">
+
+        <section class="hero-section">
+            <p class="small-label">N5 SPEAKING PRACTICE</p>
+
+            <h1>Practice Japanese Speaking</h1>
+
+            <p class="intro-text">
+                Generate a simple Japanese question and answer it using your voice.
+            </p>
+        </section>
+
+        <section class="practice-card">
+
+            <div class="question-header">
+                <span class="question-number">Random Question</span>
+                <span id="questionCount">Question 1</span>
+            </div>
+
+            <div class="question-box">
+
+                <h2 id="questionJapanese">
+                    こんにちは。お名前は何ですか。
+                </h2>
+
+                <p id="questionKana">
+                    こんにちは。おなまえは なんですか。
+                </p>
+
+                <p id="questionRomaji">
+                    Konnichiwa. Onamae wa nan desu ka?
+                </p>
+
+                <p id="questionMeaning">
+                    Hello. What is your name?
+                </p>
+
+            </div>
+
+            <div class="button-group">
+
+                <button id="generateBtn" class="primary-btn">
+                    🔄 Generate Question
+                </button>
+
+                <button id="micBtn" class="mic-btn">
+                    🎤 Start Speaking
+                </button>
+
+            </div>
+
+            <p id="statusMessage" class="status-message">
+                Click “Start Speaking” and answer in Japanese.
+            </p>
+
+            <div class="answer-section">
+
+                <label for="answerText">
+                    Your Answer
+                </label>
+
+                <textarea
+                    id="answerText"
+                    placeholder="Your recognized Japanese answer will appear here..."
+                    rows="4"
+                ></textarea>
+
+                <div class="answer-buttons">
+
+                    <button id="saveBtn" class="save-btn">
+                        💾 Save Answer
+                    </button>
+
+                    <button id="clearBtn" class="clear-btn">
+                        Clear
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="info-section">
+
+            <div class="info-card">
+                <span class="info-icon">🎤</span>
+                <h3>Speak</h3>
+                <p>Use your microphone to answer the question in Japanese.</p>
+            </div>
+
+            <div class="info-card">
+                <span class="info-icon">📖</span>
+                <h3>Learn</h3>
+                <p>See kana, romaji, and English meaning for every question.</p>
+            </div>
+
+            <div class="info-card">
+                <span class="info-icon">📚</span>
+                <h3>Review</h3>
+                <p>Save your answers and review them later on the History page.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>Japanese Speaking Practice © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
